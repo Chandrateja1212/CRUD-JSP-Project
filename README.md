@@ -50,3 +50,43 @@ CREATE TABLE laptops (
     pcost INT,
     pimage VARCHAR(255)
 );
+
+4. File Structure
+The project follows a standard Maven-like structure:
+
+scss
+Copy code
+CRUD-JSP-Project/
+├── src/
+│   └── main/
+│       └── webapp/
+│           ├── WEB-INF/
+│           │   ├── lib/ (Contains JDBC JAR files)
+│           │   └── web.xml
+│           ├── add.jsp
+│           ├── edit.jsp
+│           ├── viewlaptops.jsp
+│           ├── delete.jsp
+│           └── insert.jsp
+└── pom.xml (if you are using Maven)
+
+5. Web Configuration
+Configure your web.xml file under WEB-INF/:
+
+xml
+Copy code
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  <display-name>JSP_CRUD</display-name>
+  <welcome-file-list>
+    <welcome-file>viewlaptops.jsp</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+</web-app>
+
+
+
