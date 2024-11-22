@@ -51,19 +51,4 @@ CREATE TABLE laptops (
     pimage VARCHAR(255)
 );
 
-### 4. File Structure
-- The project follows a standard Maven-like structure:
-CRUD-JSP-Project/
-├── src/
-│   └── main/
-│       └── webapp/
-│           ├── WEB-INF/
-│           │   ├── lib/ (Contains JDBC JAR files)
-│           │   └── web.xml
-│           ├── add.jsp
-│           ├── edit.jsp
-│           ├── viewlaptops.jsp
-│           ├── delete.jsp
-│           └── insert.jsp
-└── pom.xml (if you are using Maven)
 
